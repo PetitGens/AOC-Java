@@ -1,0 +1,34 @@
+package adventOfCode2022;
+
+import common.PuzzleSolution;
+
+public class Day0 extends PuzzleSolution {
+    private static final int YEAR = 2022;
+    private static final int DAY_NUMBER = 0;
+
+    public static void main(String[] args) throws Exception{
+        System.out.println("Tests :");
+        Day0 test = new Day0(String.format("tests/%d/%d.txt", YEAR, DAY_NUMBER));
+        System.out.println(test.firstStar());
+        System.out.println(test.secondStar());
+
+        System.out.println("\nActual answers");
+        Day0 day4 = new Day0(String.format("inputs/%d/%d.txt", YEAR, DAY_NUMBER));
+        System.out.println(day4.firstStar());
+        System.out.println(day4.secondStar());
+    }
+
+    public Day0(String puzzleInputPath) {
+        super(puzzleInputPath);
+    }
+
+    @Override
+    public String firstStar() throws Exception {
+        return null;
+    }
+
+    @Override
+    public String secondStar() throws Exception{
+        return null;
+    }
+}
