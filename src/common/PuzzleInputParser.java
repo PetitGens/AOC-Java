@@ -49,7 +49,7 @@ public class PuzzleInputParser {
                 integerMatrix.addRow();
                 continue;
             }
-            String[] splitted = line.split(" ");
+            String[] splitted = line.split(" +");
             ArrayList<Integer> integersList = new ArrayList<>();
             for(String word : splitted){
                 integersList.add(Integer.valueOf(word));
@@ -71,7 +71,7 @@ public class PuzzleInputParser {
                 continue;
             }
 
-            stringMatrix.addRow(line.split(" "));
+            stringMatrix.addRow(line.split(" +"));
         }
         return stringMatrix;
     }
